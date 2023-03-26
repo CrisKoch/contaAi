@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conta Aí</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1>Versao 2</h1>
+  Matrícula Funci: <input type="text" id="matricula"><br>
+  Produto: <input type="text" id="produto">
+  Valor: <input type="number" min="0" id="valor">
+  Data Contratação: <input type="date" id="dataContratacao">
+  <button id="botao-salvar" onclick="salvarDados()">Salvar</button>
+  <table border="1" id="campo">
+    <legend><h2>Vendas:</h2></legend>
+    <tr>
+      <th>Produto</th>
+      <th>Valor</th>
+      <th>Data Contratação</th>
+    </tr>
+  </table>
+  <!--TESTE DOWNLOAD -->
+  <a href="index.html" download>download</a>
+
+  <!-- -->
+  <p><a onclick="baixarArquivo('arquivo1.json')">Download</a></p>
+  <p><a onclick="clearAll()">Apagar todas as vendas gravadas (DANGER!!!)</a></p>
+  <script src="js/functions1.js"></script>
+</body>
+
+</html>
